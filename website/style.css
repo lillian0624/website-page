@@ -67,6 +67,8 @@ body {
 
 }
 
+
+
 .item_title {
     color: #1F2937;
     font-weight: 800;
@@ -74,18 +76,26 @@ body {
     text-align: center;
 }
 
+
 .item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-left: 20px;
+    flex: 1;
+    /* Ensure each item takes equal space */
+
+
 }
 
 .items-row {
+
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
 
@@ -93,13 +103,18 @@ body {
 .square {
     width: 100px;
     height: 100px;
-    background-color: #ccc;
-    margin-bottom: 10px;
+
+
+    border-radius: 10px;
+    border: 2px solid #3882f6;
 }
 
 .item p {
     max-width: 150px;
     word-wrap: break-word;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
 }
 
 .nav-links {
@@ -134,11 +149,68 @@ body {
 
 .quote {
     background-color: #E5E7EB;
+
+    margin: 0px auto;
+
+    padding: 100px;
+
 }
 
 .quote_content {
-    font-size: 16px;
+    max-width: 1200px;
+    font-size: 24px;
     color: #1F2937;
     font-style: italic;
-    font-weight: light;
+    font-weight: 100;
+    margin: 40px auto;
+}
+
+.quote_author {
+
+    font-weight: bold;
+    font-size: 14px;
+    color: #1F2937;
+    float: right;
+    /* Aligns the author text to the right */
+}
+
+.footer {
+    text-align: center;
+    background-color: #3882F6;
+    max-width: 1200px;
+    height: 150px;
+    margin-top: 80px;
+    margin-right: auto;
+    /* Centers the footer horizontally */
+    margin-bottom: 80px;
+    margin-left: auto;
+    border-radius: 6px;
+    color: white;
+    padding: 30px;
+
+}
+
+.footer button {
+    background-color: #3882f6;
+    padding: 10px 20px;
+    color: #F9FAF8;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: background-color 0.3s ease;
+}
+
+.copyright {
+    background-color: #1F2937;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    /* Aligns content horizontally */
+    align-items: center;
+    /* Aligns content vertically */
+
 }
