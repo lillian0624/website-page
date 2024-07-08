@@ -3,21 +3,57 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 
 .container {
-    max-width: 1200px;
+
+
     margin: 0 auto;
+
+}
+
+.nav-bar {
+    background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 
 }
 
 
 .header {
+    padding: 0 20px 40px 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #1F2937;
 
+
+}
+
+.header h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: extra-bold;
+}
+
+.header p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header button {
+    background-color: #3882f6;
+    padding: 10px 20px;
+    color: #F9FAF8;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
 .header div {
@@ -27,16 +63,15 @@ body {
 .header img {
     width: 100px;
     height: auto;
-    margin-left: 20px;
+    margin-left: 50px;
 
 }
 
-
-
-.items-row {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+.item_title {
+    color: #1F2937;
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
 }
 
 .item {
@@ -44,7 +79,16 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-left: 20px;
 }
+
+.items-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
 
 .square {
     width: 100px;
@@ -71,9 +115,11 @@ body {
 
 
 .nav-links a {
+
     text-decoration: none;
-    color: #000;
-    font-weight: bold;
+    color: #E5E7EB;
+
+    font-size: 18px;
 }
 
 .nav-links a:hover {
@@ -83,4 +129,16 @@ body {
 
 .logo img {
     max-width: 100px;
+}
+
+
+.quote {
+    background-color: #E5E7EB;
+}
+
+.quote_content {
+    font-size: 16px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: light;
 }
